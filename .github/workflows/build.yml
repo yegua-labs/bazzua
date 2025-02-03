@@ -1,9 +1,8 @@
-name: bluebuild
+name: Build Main Image
 on:
   schedule:
     - cron:
-        "00 06 * * *" # build at 06:00 UTC every day
-        # (20 minutes after last ublue images start building)
+        "00 10 * * 2" # build at 10:00 UTC every Tuesday
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
@@ -15,7 +14,7 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
   cancel-in-progress: true
 jobs:
-  bluebuild:
+  build:
     name: Build Custom Image
     runs-on: ubuntu-latest
     permissions:
