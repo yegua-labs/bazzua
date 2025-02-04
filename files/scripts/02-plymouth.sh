@@ -3,7 +3,7 @@
 set -oue pipefail
 
 cd /usr/share/plymouth/themes
-curl -L https://github.com/adi1090x/plymouth-themes/releases/download/v1.0/rings.tar.gz | tar xvf -
+curl -L https://github.com/adi1090x/plymouth-themes/releases/download/v1.0/rings.tar.gz | tar xzvf -
 
 cat <<EOF >> rings/rings.script
 
