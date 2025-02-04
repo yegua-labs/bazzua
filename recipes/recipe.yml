@@ -22,6 +22,7 @@ modules:
   - type: script
     scripts:
       - 01-extra-packages.sh
+      - 02-plymouth.sh
 
   - type: initramfs
 
