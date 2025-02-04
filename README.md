@@ -1,20 +1,22 @@
 # Bazzua
 
-Bazzite for Yegua Labs.
+Bazzite for my personal gaming PC.
+
+## Specs
+- CPU: AMD Ryzen 7 7800X3D
+- GPU: NVIDIA RTX 4080
+- GPU: AMD Radeon RX 6400 (vfio passthrough)
+- Memory: 64 GB
+- Platform: Gigabyte B650 GAMING X AX
 
 ## Installation
+
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/blue-build/template:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/yegua-labs/bazzua:latest
   ```
-- Reboot to complete the rebase:
+
+Reboot and run:
   ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/blue-build/template:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/yegua-labs/bazzua:latest
+
   ```
