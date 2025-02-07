@@ -2,7 +2,7 @@ name: Build Main Image
 on:
   schedule:
     - cron:
-        "00 10 * * 2" # build at 10:00 UTC every Tuesday
+        "00 10 * * 2,6" # build at 10:00 UTC every Tuesday and Saturday
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
