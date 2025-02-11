@@ -23,8 +23,8 @@ modules:
   - type: script
     scripts:
       - 01-extra-packages.sh
-      - 02-plymouth.sh
+  #    - 02-plymouth.sh
 
-  - type: initramfs
+  #- type: initramfs
 
   - type: signing
