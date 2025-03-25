@@ -23,6 +23,7 @@ modules:
       - mullvad-vpn
       - plymouth-plugin-script
       - strace
+      - lsscsi
       - virt-manager
 
   - type: script
